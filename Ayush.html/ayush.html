@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ayush's Website</title>
+  <style>
+    /* Base styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #e0f7fa, #f1f8e9);
+      color: #333;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(135deg, #4CAF50, #2E7D32);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      animation: slideDown 1.5s ease;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    header p {
+      animation: fadeIn 2.5s ease-in-out;
+    }
+
+    /* Navbar */
+    nav {
+      background-color: #333;
+      display: flex;
+      justify-content: center;
+      animation: fadeIn 3s ease;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 15px 20px;
+      display: inline-block;
+      transition: background 0.3s, transform 0.3s;
+    }
+
+    nav a:hover {
+      background: #4CAF50;
+      transform: scale(1.1);
+    }
+
+    /* Sections */
+    section {
+      padding: 60px 20px;
+      text-align: center;
+      opacity: 0;
+      transform: translateY(50px);
+      animation: fadeUp 1s ease forwards;
+    }
+
+    section:nth-of-type(1) { animation-delay: 0.5s; }
+    section:nth-of-type(2) { animation-delay: 1s; }
+    section:nth-of-type(3) { animation-delay: 1.5s; }
+
+    section h2 {
+      margin-bottom: 20px;
+      font-size: 2rem;
+      color: #2E7D32;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      padding: 5px 0;
+      font-size: 1.1rem;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      animation: slideUp 1.5s ease;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    /* Keyframes for animations */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-100px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(100px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to Ayush's Website</h1>
+    <p>Are You Mad</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Ayush</h2>
+    <p>Hello! I am Ayush. I am a B.Tech student interested in Software Engineering, DSA, and Hacking.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li>Guess Game Project</li>
+      <li>Learning AWS & JavaScript</li>
+      <li>Improving my coding skills</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: ayushrana6396@gmail.com</p>
+    <p>LinkedIn: <a href="#" target="_blank">Ayush's LinkedIn</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Ayush Kumar</p>
+  </footer>
+
+</body>
+</html>
+
