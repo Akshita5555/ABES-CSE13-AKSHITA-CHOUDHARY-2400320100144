@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MovieZone</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>MovieZone</h1>
+    <nav>
+        <a href="#">Login</a>
+        <a href="#">Watchlist</a>
+    </nav>
+</header>
+
+<section class="filters">
+    <select>
+        <option>All Genres</option>
+        <option>Action</option>
+        <option>Comedy</option>
+        <option>Anime</option>
+    </select>
+    <select>
+        <option>Sort by Rating</option>
+        <option>Highest to Lowest</option>
+        <option>Lowest to Highest</option>
+    </select>
+</section>
+
+<section class="movies-grid">
+    <div class="movie-card">
+        <img src="titan.jpg" alt="Attack on Titan">
+        <h3>Attack on Titan</h3>
+        <p>Rating: 9.0</p>
+        <a href="#modal1" class="details-btn">Details</a>
+    </div>
+    <div class="movie-card">
+        <img src="inception.jpg" alt="Inception">
+        <h3>Inception</h3>
+        <p>Rating: 8.8</p>
+        <a href="#modal2" class="details-btn">Details</a>
+    </div>
+    <div class="movie-card">
+        <img src="naruto.jpg" alt="Naruto">
+        <h3>Naruto</h3>
+        <p>Rating: 8.3</p>
+        <a href="#modal3" class="details-btn">Details</a>
+    </div>
+</section>
+
+<!-- CSS-only Modals -->
+<div id="modal1" class="modal">
+    <div class="modal-content">
+        <a href="#" class="close">&times;</a>
+        <h2>Attack on Titan</h2>
+        <p>Description: Humans vs Titans</p>
+        <p>Rating: 9.0</p>
+    </div>
+</div>
+
+<div id="modal2" class="modal">
+    <div class="modal-content">
+        <a href="#" class="close">&times;</a>
+        <h2>Inception</h2>
+        <p>Description: Dream within a dream</p>
+        <p>Rating: 8.8</p>
+    </div>
+</div>
+
+<div id="modal3" class="modal">
+    <div class="modal-content">
+        <a href="#" class="close">&times;</a>
+        <h2>Naruto</h2>
+        <p>Description: Ninja story</p>
+        <p>Rating: 8.3</p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 MovieZone</p>
+</footer>
+
+</body>
+</html>
