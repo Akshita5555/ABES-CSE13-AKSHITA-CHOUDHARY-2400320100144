@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Akshita | Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">Akshita<span>.</span></div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    </nav>
+  </header>
+
+  <section id="home" class="home">
+    <div class="hero-text">
+      <h1>Hi, I'm <span>Akshita</span> 👋</h1>
+      <p>Aspiring Developer & Creative Student</p>
+      <a href="#contact" class="btn">Let's Connect</a>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="about-content glass">
+      <img src="akshitapic.jpeg" alt="profile">
+      <div>
+        <h2>About Me</h2>
+        <p>Hey! I'm <strong>Akshita Choudhary</strong> from Ghaziabad. I'm a 2nd year B.Tech student at ABES Engineering College. I love creating, learning new things and leading events. I'm excited to grow in the tech world and build my dream career.</p>
+        <ul>
+          <li><strong>Email:</strong> akshitachoudhary951@gmail.com</li>
+          <li><strong>Phone:</strong> 7906159736</li>
+          <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/akshita-choudhary-bba759334?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">Click Here</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <div class="skill-grid">
+      <div class="skill glass">HTML</div>
+      <div class="skill glass">CSS</div>
+      <div class="skill glass">Basic JavaScript</div>
+      <div class="skill glass">Event Management</div>
+      <div class="skill glass">Leadership</div>
+      <div class="skill glass">Public Speaking</div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card glass">
+        <h3>Portfolio Website</h3>
+        <p>My personal responsive portfolio using HTML, CSS and a bit of JS.</p>
+      </div>
+      <div class="project-card glass">
+        <h3>Event Management</h3>
+        <p>Organized and coordinated college events with great teamwork.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="contact-box glass">
+      <h2>Contact Me</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Message" required></textarea>
+        <button type="submit" class="btn">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Akshita Choudhary | Made with ❤️</p>
+  </footer>
+
+  <script>
+    function toggleMenu(){
+      document.getElementById("navLinks").classList.toggle("active");
+    }
+  </script>
+</body>
+</html>
