@@ -1,0 +1,182 @@
+b/* HopeBridge Website Styling */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #fff9f9;
+  color: #333;
+  overflow-x: hidden;
+}
+
+/* Navbar */
+nav {
+  background: linear-gradient(90deg, #ff9a9e, #fad0c4);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 60px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+nav h1 {
+  color: #fff;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffe6eb;
+}
+
+/* Hero Section */
+.hero {
+  height: 90vh;
+  background: url('../images/background.jpg') center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  backdrop-filter: brightness(0.8);
+}
+
+.hero h2 {
+  font-size: 2.8rem;
+  background: rgba(0,0,0,0.4);
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.hero p {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  width: 60%;
+  background: rgba(0,0,0,0.4);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+/* Buttons */
+.btn {
+  margin-top: 25px;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  background: linear-gradient(90deg, #ff9a9e, #fad0c4);
+  cursor: pointer;
+  color: white;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+/* Cards */
+.section {
+  padding: 60px 10%;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #ff5f7e;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  width: 280px;
+  padding: 25px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.card h3 {
+  margin: 15px 0;
+  color: #ff4e70;
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(90deg, #ff9a9e, #fad0c4);
+  text-align: center;
+  padding: 20px;
+  color: white;
+  font-size: 0.9rem;
+}
+
+/* Animations */
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0); }
+}
+
+.hero h2 {
+  animation: float 3s ease-in-out infinite;
+}
+/* 🌙 Dark Mode Styling */
+body.dark-mode {
+  background-color: #121212;
+  color: #eee;
+}
+
+body.dark-mode nav {
+  background: linear-gradient(90deg, #232526, #414345);
+}
+
+body.dark-mode .section {
+  background-color: #1e1e1e;
+  color: #ddd;
+}
+
+body.dark-mode .card {
+  background-color: #2a2a2a;
+  color: #fff;
+}
+
+body.dark-mode footer {
+  background: linear-gradient(90deg, #232526, #414345);
+}
