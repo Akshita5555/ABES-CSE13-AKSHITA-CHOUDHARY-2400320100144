@@ -1,0 +1,148 @@
+index.html  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hope Verse | Stories of Kindness</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    <h1>Hope Verse</h1>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#stories">Stories</a></li>
+      <li><a href="#volunteer">Volunteer</a></li>
+      <li><a href="#hope">Hope Wall</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div>
+    <h2>Where Kindness Finds a Voice</h2>
+    <p>Connecting hearts through stories, hope, and volunteering</p>
+    <button class="btn" onclick="scrollToStories()">Read Stories</button>
+  </div>
+</section>
+
+<section id="about">
+  <div class="section-title">
+    <h2>Why Hope Verse?</h2>
+    <p>Hope Verse builds emotional bridges by allowing people to share stories and spread kindness digitally.</p>
+  </div>
+</section>
+
+<section id="stories">
+  <div class="section-title">
+    <h2>Stories of Hope</h2>
+  </div>
+</section>
+
+<section id="donate" style="
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+              url('poor2.jpeg') center/cover no-repeat;
+  color: #fff;
+  padding: 60px 10%;
+  text-align: center;
+">
+  <div class="section-title">
+    <h2>Support Through Kindness</h2>
+    <p>Your contribution helps us continue spreading hope.</p>
+  </div>
+  <!-- Your grid/cards go here -->
+</section>
+
+
+  <div class="grid">
+    <div class="card">
+      <h3>Why Donate?</h3>
+      <p>
+        CONTACT US FOR DONATION : 0120-26351551<br>
+        EMAIL : hopeversa11.05.2006@gmail.com
+      </p>
+
+      <button class="btn" onclick="donateNow()">Donate Now</button>
+
+      <!-- QR Code -->
+      <div id="qrBox" style="display:none; margin-top:15px; text-align:center;">
+        <p><strong>Scan to Donate</strong></p>
+        <img src="donate.jpg" alt="Donation QR Code" width="200">
+      </div>
+    </div>
+
+    <div class="card">
+      <iframe
+        width="100%"
+        height="315"
+        src="https://www.youtube.com/embed/34DA9Q2qX9Q"
+        title="Impact Video"
+        frameborder="0"
+        allowfullscreen>
+      </iframe>
+      <p style="margin-top:10px">See how kindness and donations change lives.</p>
+    </div>
+  </div>
+</section>
+
+<section id="volunteer" style="
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+              url('volunteer.jpeg') center/cover no-repeat;
+  color:#fff;
+  padding:60px 10%;
+  text-align:center;
+  min-height:500px;">
+  <div class="section-title">
+    <h2>Become a Volunteer</h2>
+  </div>
+  <form onsubmit="volunteerForm(event)">
+    <input type="text" placeholder="Your Name" required style="background: rgba(255,255,255,0.1); color:#fff; border:1px solid #fff;" />
+    <input type="email" placeholder="Your Email" required style="background: rgba(255,255,255,0.1); color:#fff; border:1px solid #fff;" />
+    <textarea rows="4" placeholder="Why do you want to volunteer?" style="background: rgba(255,255,255,0.1); color:#fff; border:1px solid #fff;"></textarea>
+    <button class="btn" type="submit">Join Now</button>
+  </form>
+</section>
+
+
+
+<section class="hope-wall" id="hope">
+  <div class="section-title">
+    <h2>Wall of Hope</h2>
+  </div>
+  <form onsubmit="hopeMessage(event)">
+    <input type="text" placeholder="Your Name" required />
+    <textarea rows="3" placeholder="Your Message of Hope" required></textarea>
+    <button class="btn" type="submit">Share Hope</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2025 Hope Verse NGO | Spreading Kindness Digitally</p>
+</footer>
+
+<script>
+  function volunteerForm(e){
+    e.preventDefault();
+    alert('Thank you for volunteering! We will contact you soon through your email');
+  }
+
+  function donateNow(){
+    const qr = document.getElementById("qrBox");
+    qr.style.display = qr.style.display === "none" ? "block" : "";
+  }
+
+  function hopeMessage(e){
+    e.preventDefault();
+    alert('Your message of hope has been shared!');
+  }
+
+  function scrollToStories(){
+    document.getElementById('stories').scrollIntoView({behavior:'smooth'});
+  }
+</script>
+
+</body>
+</html>

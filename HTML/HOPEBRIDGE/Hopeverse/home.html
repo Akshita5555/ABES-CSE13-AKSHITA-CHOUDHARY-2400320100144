@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hope Verse | Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="fade-in">
+  <h1>Hope Verse 🌱</h1>
+  <p id="welcome"></p>
+</header>
+
+<!-- MOOD SELECTOR -->
+<section class="mood fade-in">
+  <h2>How are you feeling right now?</h2>
+  <div class="moods">
+    <button onclick="setMood('Sad')">😔 Sad</button>
+    <button onclick="setMood('Stressed')">😣 Stressed</button>
+    <button onclick="setMood('Hopeful')">🙂 Hopeful</button>
+    <button onclick="setMood('Grateful')">💖 Grateful</button>
+  </div>
+  <p id="moodText"></p>
+</section>
+
+<!-- QUOTE CAROUSEL -->
+<section class="quotes fade-in">
+  <h2>Words That Heal 💭</h2>
+  <p id="quote"></p>
+</section>
+
+<!-- STORY SHARING -->
+<section class="share fade-in">
+  <h2>Share Your Story 💬</h2>
+  <textarea id="story" placeholder="Write freely. This space is yours."></textarea>
+  <button onclick="addStory()">Share Hope</button>
+</section>
+
+<!-- STORY WALL -->
+<section class="wall fade-in">
+  <h2>Stories of Courage 🤍</h2>
+  <div id="stories"></div>
+</section>
+
+<!-- HOPE METER -->
+<section class="meter fade-in">
+  <h2>Hope Meter 🌈</h2>
+  <div class="bar"><div id="fill"></div></div>
+  <p>Every shared story makes the world lighter.</p>
+</section>
+
+<!-- DIGITAL VOLUNTEERING -->
+<section class="volunteer fade-in">
+  <h2>Volunteer Without Money 🤝</h2>
+  <p>• Listen to someone</p>
+  <p>• Share a kind message</p>
+  <p>• Be present</p>
+</section>
+
+<footer>
+  <p>Hope Verse © 2025 | Built with Empathy</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f7f8;
+  color: #333;
+}
+
+/* ANIMATIONS */
+.fade-in {
+  animation: fade 1.5s ease;
+}
+
+@keyframes fade {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+.glow {
+  text-shadow: 0 0 10px rgba(255,255,255,0.6);
+}
+
+.pulse {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {transform: scale(1);}
+  50% {transform: scale(1.05);}
+  100% {transform: scale(1);}
+}
+
+/* FRONT */
+.front {
+  background: linear-gradient(to right, #6dd5ed, #2193b0);
+  height: 100vh;
+}
+
+.overlay {
+  text-align: center;
+  color: white;
+  padding-top: 120px;
+}
+
+.btn {
+  padding: 12px 30px;
+  background: white;
+  color: #2193b0;
+  border-radius: 25px;
+  text-decoration: none;
+}
+
+/* LOGIN */
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-box {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  text-align: center;
+  width: 300px;
+}
+
+/* HOME */
+header {
+  background: #6dd5ed;
+  padding: 30px;
+  text-align: center;
+}
+
+section {
+  background: white;
+  margin: 20px;
+  padding: 25px;
+  border-radius: 15px;
+}
+
+.moods button {
+  margin: 5px;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.bar {
+  background: #ddd;
+  height: 20px;
+  border-radius: 10px;
+}
+
+#fill {
+  height: 100%;
+  width: 0%;
+  background: #6dd5ed;
+  border-radius: 10px;
+  transition: width 0.5s;
+}
+
+footer {
+  background: #2193b0;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Online Resume Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>ResumeCraft</h1>
+  <p>Create your professional resume instantly</p>
+</header>
+
+<div class="container">
+
+  <!-- FORM -->
+  <div class="form">
+    <h2>Enter Your Details</h2>
+
+    <input type="text" placeholder="Full Name" id="name">
+    <input type="text" placeholder="Job Title" id="title">
+    <input type="email" placeholder="Email" id="email">
+    <input type="text" placeholder="Phone Number" id="phone">
+
+    <textarea placeholder="Professional Summary" id="summary"></textarea>
+    <textarea placeholder="Education" id="education"></textarea>
+    <textarea placeholder="Skills (comma separated)" id="skills"></textarea>
+    <textarea placeholder="Experience" id="experience"></textarea>
+    <textarea placeholder="Projects / Achievements" id="projects"></textarea>
+
+    <button onclick="generateResume()">Generate Resume</button>
+    <button onclick="downloadPDF()">Download PDF</button>
+  </div>
+
+  <!-- RESUME PREVIEW -->
+  <div class="resume" id="resume">
+    <h1 id="r-name">Your Name</h1>
+    <h3 id="r-title">Job Title</h3>
+
+    <p><b>Email:</b> <span id="r-email"></span></p>
+    <p><b>Phone:</b> <span id="r-phone"></span></p>
+
+    <section>
+      <h2>Profile</h2>
+      <p id="r-summary"></p>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <p id="r-education"></p>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <p id="r-skills"></p>
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+      <p id="r-experience"></p>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <p id="r-projects"></p>
+    </section>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+</body>
+</html>

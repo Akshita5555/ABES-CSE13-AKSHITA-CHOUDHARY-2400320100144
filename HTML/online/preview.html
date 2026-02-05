@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Resume Preview</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <a href="form.html" class="btn-glow">Edit</a>
+  <button onclick="toggleTheme()" class="btn-glow">Theme</button>
+  <button onclick="window.print()" class="btn-main">Download</button>
+</nav>
+
+<div id="resume" class="resume-card">
+  <h1 id="p-name"></h1>
+  <h3 id="p-role"></h3>
+  <p id="p-email"></p>
+  <p id="p-phone"></p>
+
+  <h4>Summary</h4>
+  <p id="p-summary"></p>
+
+  <h4>Skills</h4>
+  <ul id="p-skills"></ul>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
